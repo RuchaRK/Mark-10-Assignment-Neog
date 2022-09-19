@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Cash Register</h1>
+    <label for="billInput"> Enter the Bill Amount </label>
+    
+    <textarea id="billInput"  placeholder="Enter bill amount here"></textarea>
+    
+    <label for="cashInput"> Enter the cash you have </label>  
+    
+    <textarea id="cashInput" style="display:none;" placeholder="Enter the cash here"></textarea>
+    
+    <button id="calculateBtn">Check the Return</button>
+    <pr id="error-msg" style="display: none;">ghi rucha</pr>
+    
+    <table>
+        
+            <tr>
+                <td>Cash Required</td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+                <td class="cash-req"></td>
+            </tr>
+            <tr>
+                <td>Notes avaliable</td>
+                <td>2000</td>
+                <td> 500</td>
+                <td>100</td>
+                <td> 20</td>
+                <td>10</td>
+                <td> 5</td>
+                <td> 1</td>
+            </tr>
+         
+     
+            
+    </table>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+:root{
+    --primary:#A2A2A1FF;
+    --secondary: #195190FF;
+}
+body{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.container{
+   margin: auto;
+    width: 70%;
+    border: 0.1rem var(--secondary) solid;
+    padding: 1rem 1rem;
+
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin: 2rem 2rem;
+}
+label,textarea{
+    width: 50%;
+    margin: auto;
+}
+textarea{
+    height:100px;
+    display: block;
+    background-color: transparent;  
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: black;
+    
+}
+label{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+button{
+    display: block;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    margin-left: 6rem;
+    margin-block-end: 1rem;
+    background-color: transparent;
+    margin: auto;
+    
+}
+
+table,th,td{
+   border-collapse: collapse;
+   border: 3px solid var(--secondary);
+   margin: 1rem 1rem;
+   width: 70%;
+   padding: 0.5rem 0.5rem;
+   font-size: large;
+   
+   
+}
