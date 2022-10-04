@@ -25,23 +25,37 @@ else{
 checkBtn.addEventListener("click",validate);
 
 function validate(){
+
+
+
     if(!isNaN(firstInput.value))
     {
-        if(firstInput.value > 0){
-            console.log("here");
-            if(secondInput.value <= firstInput.value)
+        var inputFirst = Number(firstInput.value)
+        var inputSnd = Number(secondInput.value)
+        
+        if(inputFirst <= 0 || inputSnd <= 0){
+            
+            msg = "Enter bill amount greater than zero";
+            showMessage(msg)
+
+        }
+        else if(inputFirst === inputSnd){
+            msg = "Bill amount and cash u have are same so no return"
+            showMessage(msg)
+
+        }
+        else{
+           
+            if(inputSnd > inputFirst )
             {
-                console.log(" second if shere");
-                var amtRequired = secondInput.value - firstInput.value;
+                var amtRequired = inputSnd - inputFirst;
                 calculateCash(amtRequired);
             }
             else{
+                
                 msg="U have less money than the bill amount";
                 showMessage(msg)
             }
-        }else{
-            msg = "Enter bill amount greater than zero";
-            showMessage(msg)
         }
     }
     else{
@@ -51,6 +65,7 @@ function validate(){
    
 }
 function calculateCash(amtRequired){
+
     for( var i=0;i<notes.length;i++)
     { 
         var cash = Math.trunc(amtRequired/notes[i]);
