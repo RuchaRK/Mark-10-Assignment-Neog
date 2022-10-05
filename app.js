@@ -33,9 +33,9 @@ function validate(){
         var inputFirst = Number(firstInput.value)
         var inputSnd = Number(secondInput.value)
         
-        if(inputFirst <= 0 || inputSnd <= 0){
+        if(inputFirst < 0 || inputSnd < 0){
             
-            msg = "Enter bill amount greater than zero";
+            msg = "Enter values greater than zero";
             showMessage(msg)
 
         }
